@@ -16,7 +16,6 @@ app = Flask(__name__)
 
 logging.basicConfig(level=logging.DEBUG)
 
-# HF_TOKEN = "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"
 REPO_ID = "mistralai/Mistral-7B-Instruct-v0.3"
 client = InferenceClient(token=os.getenv("HF_TOKEN"))
 HF_TOKEN = os.getenv("HF_TOKEN")
